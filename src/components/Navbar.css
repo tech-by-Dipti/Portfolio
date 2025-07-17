@@ -1,0 +1,80 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 60px;
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #269EBB;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links li {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  cursor: pointer;
+}
+
+.nav-links i {
+  color: #D68B3C;
+  margin-right: 8px;
+}
+
+.nav-links a {
+  text-decoration: none;       /* removes underline */
+  color: inherit;              /* keeps the same color as parent */
+}
+
+.nav-links a:visited {
+  color: inherit;              /* removes purple after clicking */
+}
+
+.nav-links a:hover {
+  color: #3CBFD6;              /* optional: hover color */
+}
+
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  color: #269EBB;
+  cursor: pointer;
+}
+
+/* 🔁 Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: white;
+    flex-direction: column;
+    width: 200px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}

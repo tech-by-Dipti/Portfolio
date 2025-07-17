@@ -1,0 +1,23 @@
+.W_appIcon-section {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+.whatsapp-link {
+  background-color: #25d366;
+  color: white;
+  padding: 16px;
+  border-radius: 50%;
+  font-size: 24px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+ border: none;
+ text-decoration: none; 
+}
+.whatsapp-link:hover {
+  transform: scale(1.1);
+}

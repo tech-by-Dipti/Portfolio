@@ -1,0 +1,99 @@
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 60px;
+  background-color: #0e1628;
+  color: white;
+  flex-wrap: wrap;
+}
+.hero-text {
+  max-width: 600px;
+}
+.welcome {
+  color: #3bbadb;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+h2 {
+  font-size: 36px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+.name {
+  color: #d68b3c;
+  font-weight: bold;
+}
+.passion {
+  color: #3cbfd6;
+  font-weight: bold;
+  margin-left: 5px;
+}
+p {
+  font-size: 20px;
+}
+.hero-button .hireme,
+.hero-button .cv {
+  padding: 12px 24px;
+  font-size: 16px;
+  margin-right: 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
+.hireme:hover {
+  background-color: #b36a28;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.cv:hover {
+  background-color: #3cbfd6;
+  color: white;
+  border: 2px solid #3cbfd6;
+  transition: all 0.3s ease;
+}
+.hireme {
+  background-color: #d68b3c;
+  color: #fff;
+  text-decoration: none;
+}
+.cv {
+  background-color: transparent;
+  color: #3cbfd6;
+  border: 2px solid #008aaa !important;
+  text-decoration: none;
+}
+.hero-image img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  aspect-ratio: 1 / 1; /* 🔁 Ensures it's always a square */
+  border: 4px solid #3cbfd6;
+  box-shadow: 0 0 10px rgba(60, 191, 214, 0.4);
+}
+
+/* 🔁 Responsive Design */
+@media (max-width: 768px) {
+  .hero-section {
+    display: flex;
+    text-align: center;
+    padding: 30px 20px;
+  }
+  .hero-button .hireme,
+  .hero-button .cv {
+    margin-bottom: 30px;
+  }
+  .hero-image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+  }
+  .hero-text {
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+}

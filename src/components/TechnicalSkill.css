@@ -1,0 +1,75 @@
+/* ✅ Recommended at the top of your CSS file */
+* {
+  box-sizing: border-box;
+}
+
+.skills-section {
+  padding: 80px 60px;
+  color: white;
+  text-align: center;
+  background-color: #0e1628;
+}
+
+.skills-heading {
+  color: white;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.skill {
+  color: #00adb5;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 16px;
+  justify-items: center;
+  align-items: stretch;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.skill-card {
+  background-color: #1f2a40;
+  border: 1px solid;
+  border-radius: 20px;
+  box-shadow: 0 0 12px rgb(164, 160, 160);
+  padding: 16px 12px;
+  width: 100%;
+  max-width: 140px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 160px; 
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+}
+
+.skill-icon {
+  font-size: 70px;
+  margin-bottom: 12px;
+}
+
+.skill-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .skill-card {
+    width: 100%;
+    max-width: none;
+  }
+}
