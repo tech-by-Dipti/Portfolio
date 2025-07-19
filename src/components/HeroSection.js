@@ -18,7 +18,7 @@ export default function HeroSection() {
             Hire Me!
           </a>
           <a
-            href="/Dipti_Manna.pdf" // path to your CV file
+            href={`${process.env.PUBLIC_URL}/Dipti_CV.pdf`} // path to your CV file
             target="_blank"
             rel="noopener noreferrer"
             className="cv"
